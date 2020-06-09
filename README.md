@@ -6,8 +6,8 @@
 Tasked with solving the object detection problems the robots will face, a project to implement an automatic 3D segmentation of underwater objects (for example, underwater pipes), i.e. identifying and labelling objects in a given surrounding, using Deep Learning (DL), is created.
 This project comprises of:
 - ROS for stereo image obtention and calibration.
-- Python for Disparity image, 3D Point Cloud, and Volumetric data generation.
-- 3D U-Net for training = Automatic image segmentation/annotation
+- Python for disparity image, 3D point cloud, and volumetric data generation.
+- 3D U-Net for training = automatic image segmentation/annotation
 
 # Project tasks
 - Obtain disparity images and point clouds from stereo images.
