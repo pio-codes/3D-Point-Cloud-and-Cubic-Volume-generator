@@ -9,13 +9,20 @@ This project comprises of:
 - Python for disparity image, 3D point cloud, and volumetric data generation.
 - 3D U-Net for training = automatic image segmentation/annotation
 
-# Project tasks
-- Obtain disparity images and point clouds from stereo images.
+# Current project tasks
+- Obtain disparity images and point clouds from calibrated stereo images.
 Involves identifying identical features in both left and right stereo images, estimating the depth of the objects in the images and reproducing the 3D structures.
 - Obtain ground truth images from disparity images.
 With the help of an image editor, the pipes are identified and classified. This is, basically, a manual segmentation of the images.
 - Obtain cubic volumes.
 We calculate the missing depth values of the 2D stereo images to create a 3D cubic volume for training.
+
+# Code overview 
+
+# Requirements
+- INPUT DATA
+ -- Calibrated stereo images (left and right pair)
+ -- Ground truth images of each pair
  
  # Citation/Credits
  Some of the codes include highly modified version of the ***StereoVision*** package by Daniel Lee (https://github.com/erget/StereoVision)
