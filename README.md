@@ -30,15 +30,11 @@ More information, in comparison to a standard .ply file, is added. The following
 
 ![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/ply.png?raw=true)
 
-R, G, B original colour = RGB values from original image
-
-R, G, B ground truth colour = RGB values from objects in ground truth image
-
-Grayscale value = Grayscale value of objects
-
-X, Y disparity coordinates = For each 3D coordinate, its X, Y from original disparity map.
-
-Class ID = IDs/colour labels assigned to the objects during ground truth generation. Based on the following assumed classes:
+- R, G, B original colour = RGB values from original image
+- R, G, B ground truth colour = RGB values from objects in ground truth image
+- Grayscale value = Grayscale value of objects
+- X, Y disparity coordinates = For each 3D coordinate, its X, Y from original disparity map.
+- Class ID = IDs/colour labels assigned to the objects during ground truth generation. Based on the following assumed classes:
 
 ![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/colourmap.png?raw=true)
 # Requirements
