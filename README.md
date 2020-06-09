@@ -17,4 +17,5 @@ With the help of an image editor, the pipes are identified and classified. This 
 - Obtain cubic volumes.
 We calculate the missing depth values of the 2D stereo images to create a 3D cubic volume for training.
  
- # 
+ # Citation/Credits
+ Some of the codes include highly modified version of the *** StereoVision *** package by Daniel Lee (https://github.com/erget/StereoVision)
