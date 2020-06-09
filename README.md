@@ -21,8 +21,8 @@ We calculate the missing depth values of the 2D stereo images to create a 3D cub
 
 # Requirements
 - INPUT DATA
- -- Calibrated stereo images (left and right pair)
- -- Ground truth images of each pair
+  - Calibrated stereo images (left and right image)
+  - Ground truth images of each pair
  
  # Citation/Credits
- Some of the codes include highly modified version of the ***StereoVision*** package by Daniel Lee (https://github.com/erget/StereoVision)
+ Some of the codes include highly modified version of the [***StereoVision***](https://github.com/erget/StereoVision) package by Daniel Lee.
