@@ -1,6 +1,6 @@
 # 3D Point Cloud and Cubic Volume generator
  Generate 3D point clouds (ply format) and 3D cubic volume files (.nii.gz format) for training using 3D U-Net.
-# Background
+## Background
  The Systems, Robotics and Vision (SRV) research group of Universitat de les Illes Balears (UIB) is taking part in a research project, called the TWIN roBOTs for cooperative underwater intervention missions (TWINBOT) Project, which has the purpose of improving Autonomous Underwater Vehicles (AUVs) used in survey missions. Further information can be found here: http://www.irs.uji.es/twinbot/twinbot.html#
 
 Tasked with solving the object detection problems the robots will face, a project to implement an automatic 3D segmentation of underwater objects (for example, underwater pipes), i.e. identifying and labelling objects in a given surrounding, using Deep Learning (DL), is created.
@@ -9,7 +9,7 @@ This project comprises of:
 - Python for disparity image, 3D point cloud, and volumetric data generation.
 - 3D U-Net for training = automatic image segmentation/annotation
 
-# Current project tasks
+## Current project tasks
 - Obtain disparity images and point clouds from calibrated stereo images.
 Involves identifying identical features in both left and right stereo images, estimating the depth of the objects in the images and reproducing the 3D structures.
 - Obtain ground truth images from disparity images.
@@ -17,15 +17,15 @@ With the help of an image editor, the pipes are identified and classified. This 
 - Obtain cubic volumes.
 We calculate the missing depth values of the 2D stereo images to create a 3D cubic volume for training.
 
-# Code overview 
-## Disparity image - SGBM Tuning
+## Code overview 
+### Disparity image - SGBM Tuning
 A GUI that shows the SGBM parameters and computed disparity map in real time.
 
 ![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/gui.PNG?raw=true)
 
 *Note: Ground truth image must be obtained from the generated disparity image*
 
-## Point cloud generation
+### Point cloud generation
 More information, in comparison to a standard .ply file, is added. The following figure shows the additional properties.
 
 ![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/ply.png?raw=true)
@@ -37,10 +37,10 @@ More information, in comparison to a standard .ply file, is added. The following
 - Class ID = IDs/colour labels assigned to the objects during ground truth generation. Based on the following assumed classes:
 
 ![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/colourmap.png?raw=true)
-# Requirements
+## Requirements
 - INPUT DATA
   - Calibrated stereo images (left and right image)
   - Ground truth images of each pair
  
- # Citation/Credits
+ ## Citation/Credits
  Some of the codes include highly modified version of the [***StereoVision***](https://github.com/erget/StereoVision) package by Daniel Lee.
