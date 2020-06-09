@@ -21,7 +21,7 @@ We calculate the missing depth values of the 2D stereo images to create a 3D cub
 ## Disparity image - SGBM Tuning
 A GUI that shows the SGBM parameters and computed disparity map in real time.
 
-![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/gui.png?raw=true)
+![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/gui.PNG?raw=true)
 
 *Note: Ground truth image must be obtained from the generated disparity image*
 
