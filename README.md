@@ -18,6 +18,12 @@ With the help of an image editor, the pipes are identified and classified. This 
 We calculate the missing depth values of the 2D stereo images to create a 3D cubic volume for training.
 
 # Code overview 
+- Disparity image - SGBM Tuning
+A GUI that shows the SGBM parameters and computed disparity map in real time.
+*Note: Ground truth image must be obtained from the generated disparity image*
+
+- Point cloud generation
+More information, in comparison to a standard .ply file, is added. The following figure shows the additional properties.
 
 # Requirements
 - INPUT DATA
