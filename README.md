@@ -18,13 +18,29 @@ With the help of an image editor, the pipes are identified and classified. This 
 We calculate the missing depth values of the 2D stereo images to create a 3D cubic volume for training.
 
 # Code overview 
-- Disparity image - SGBM Tuning
+## Disparity image - SGBM Tuning
 A GUI that shows the SGBM parameters and computed disparity map in real time.
+
+![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/gui.png?raw=true)
+
 *Note: Ground truth image must be obtained from the generated disparity image*
 
-- Point cloud generation
+## Point cloud generation
 More information, in comparison to a standard .ply file, is added. The following figure shows the additional properties.
 
+![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/ply.png?raw=true)
+
+R, G, B original colour = RGB values from original image
+
+R, G, B ground truth colour = RGB values from objects in ground truth image
+
+Grayscale value = Grayscale value of objects
+
+X, Y disparity coordinates = For each 3D coordinate, its X, Y from original disparity map.
+
+Class ID = IDs/colour labels assigned to the objects during ground truth generation. Based on the following assumed classes:
+
+![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/colourmap.png?raw=true)
 # Requirements
 - INPUT DATA
   - Calibrated stereo images (left and right image)
