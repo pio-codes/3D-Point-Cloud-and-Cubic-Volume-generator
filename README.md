@@ -30,6 +30,7 @@ More information, in comparison to a standard .ply file, is added. The following
 
 ![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/ply.png?raw=true)
 
+- X, Y, Z coordinates = 3D coordinates
 - R, G, B original colour = RGB values from original image
 - R, G, B ground truth colour = RGB values from objects in ground truth image
 - Grayscale value = Grayscale value of objects
@@ -37,6 +38,9 @@ More information, in comparison to a standard .ply file, is added. The following
 - Class ID = IDs/colour labels assigned to the objects during ground truth generation. Based on the following assumed classes:
 
 ![alt text](https://github.com/pio-codes/3D-Point-Cloud-and-Cubic-Volume-generator/blob/master/colourmap.png?raw=true)
+
+The generated point cloud can be viewed with the following Python script: `view_point_cloud`
+
 ## Requirements
 - INPUT DATA
   - Calibrated stereo images (left and right image)
