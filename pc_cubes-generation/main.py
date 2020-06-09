@@ -1,6 +1,5 @@
 # INITIALIZATION FROM TERMINAL
-# python main.py --stereo_pair 'image folder path'/*.* 'bm settings folder' --output 'output folder path'
-# --num_pair 'integer num'
+# python main.py --stereo_pair 'image folder path'/*.* 'bm settings folder' --output 'output folder path' --num_pair 'integer num'
 # Example: python main.py --stereo_pair final_test/*.* final_test --output final_test --num_pair 2
 
 import cv2
