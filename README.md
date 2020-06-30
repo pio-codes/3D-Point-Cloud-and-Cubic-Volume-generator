@@ -44,7 +44,8 @@ The generated point cloud can be viewed with the following Python script: `view_
 ## Requirements
 - INPUT DATA
   - Calibrated stereo images (left and right image)
-  - Ground truth images of each pair
+  - Ground truth images of each pair 
+  Note: Better results are obtained when the ground truth image is derived from the disparity images obtained after running the program.
  
  ## Citation/Credits
  Some of the codes include highly modified version of the [***StereoVision***](https://github.com/erget/StereoVision) package by Daniel Lee.
